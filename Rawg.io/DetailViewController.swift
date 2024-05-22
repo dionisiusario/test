@@ -9,6 +9,7 @@ import UIKit
 import NVActivityIndicatorView
 import Kingfisher
 import CoreData
+import CRNotifications
 
 class DetailViewController: UIViewController {
     
@@ -130,10 +131,12 @@ class DetailViewController: UIViewController {
         if favoriteButton.isSelected {
             favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
             create()
+          CRNotifications.showNotification(type: CRNotifications.success, title: "Sukses Menambah!", message: "Berhasil menambah game ke dalam daftar favorit", dismissDelay: 3)
             
         }else {
             favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
             deleteData(id: id)
+          CRNotifications.showNotification(type: CRNotifications.error, title: "Sukses Menghapus!", message: "Berhasil Menghapus game dari daftar Favorit", dismissDelay: 3)
         }
         
         print(retrieve())

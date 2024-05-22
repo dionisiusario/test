@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import Kingfisher
+import CRNotifications
 
 class FavoriteViewController: UIViewController {
 
@@ -77,6 +78,7 @@ class FavoriteViewController: UIViewController {
             context.delete(deletedData)
 
             try context.save()
+
         }catch let err{
             print(err)
         }
@@ -134,7 +136,7 @@ extension FavoriteViewController: ButtonTapped {
                 self.tableView.reloadData()
                 self.gameList = self.retrieve()
                 self.tableView.reloadData()
-                
+              CRNotifications.showNotification(type: CRNotifications.success, title: "Sukses Menghapus!", message: "Berhasil Menghapus game yang dipilih", dismissDelay: 3)
             case .cancel:
                 print("cancel")
 

@@ -12,5 +12,6 @@ pod 'NVActivityIndicatorView'
 pod 'NFCReaderWriter'
 pod 'SwiftQRScanner', :git => ‘https://github.com/vinodiOS/SwiftQRScanner’
 pod 'Alamofire'
+pod 'CRNotifications'
 
 end

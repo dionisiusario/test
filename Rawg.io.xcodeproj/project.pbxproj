@@ -399,7 +399,7 @@
 				CODE_SIGN_ENTITLEMENTS = Rawg.io/Rawg.io.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 99ZRGD8DNP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawg.io/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -430,7 +430,7 @@
 				CODE_SIGN_ENTITLEMENTS = Rawg.io/Rawg.io.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 99ZRGD8DNP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawg.io/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -47,7 +47,12 @@ class QRReaderViewController: UIViewController {
   override func viewDidLoad() {
       super.viewDidLoad()
       setupTableView()
-    
+    if self.gameList.count != 0 {
+      self.qrCodeButtonTop.isHidden = false
+    }else {
+      self.qrCodeButtonTop.isHidden = true
+
+    }
    
   }
   
@@ -57,8 +62,10 @@ class QRReaderViewController: UIViewController {
     
     if self.gameList.count != 0 {
       self.stackViewAddGame.isHidden = true
+      self.qrCodeButtonTop.isHidden = false
     }else {
       self.stackViewAddGame.isHidden = false
+      self.qrCodeButtonTop.isHidden = true
 
     }
   }

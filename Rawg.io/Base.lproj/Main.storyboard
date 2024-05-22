@@ -308,13 +308,21 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="dT4-Bx-xFd"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Jhz-ts-xD5"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-9n-amo">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ahb-cu-d0R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ahb-cu-d0R" firstAttribute="trailing" secondItem="xvb-9n-amo" secondAttribute="trailing" id="0QI-FI-JZ5"/>
+                            <constraint firstItem="xvb-9n-amo" firstAttribute="leading" secondItem="ahb-cu-d0R" secondAttribute="leading" id="FzC-pI-EAx"/>
                             <constraint firstItem="2uZ-0J-3W5" firstAttribute="leading" secondItem="ahb-cu-d0R" secondAttribute="leading" id="M9C-wL-3wV"/>
                             <constraint firstItem="ahb-cu-d0R" firstAttribute="trailing" secondItem="2uZ-0J-3W5" secondAttribute="trailing" id="MLE-B6-K05"/>
+                            <constraint firstItem="ahb-cu-d0R" firstAttribute="bottom" secondItem="xvb-9n-amo" secondAttribute="bottom" id="Puv-Yx-4iQ"/>
                             <constraint firstItem="2uZ-0J-3W5" firstAttribute="top" secondItem="ahb-cu-d0R" secondAttribute="top" id="ixf-5g-hHE"/>
+                            <constraint firstItem="xvb-9n-amo" firstAttribute="top" secondItem="ahb-cu-d0R" secondAttribute="top" id="ntb-tI-tww"/>
                             <constraint firstItem="ahb-cu-d0R" firstAttribute="bottom" secondItem="2uZ-0J-3W5" secondAttribute="bottom" id="sxv-K5-HBg"/>
                         </constraints>
                     </view>
@@ -322,6 +330,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="l7k-Ko-W10"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="containerView" destination="xvb-9n-amo" id="y3S-8U-lNJ"/>
                         <outlet property="descLabel" destination="GXT-yI-cM7" id="hoL-J9-0hU"/>
                         <outlet property="favoriteButton" destination="K1J-UG-fgJ" id="Ux5-AT-Did"/>
                         <outlet property="gameDetailImageView" destination="0qe-5r-ZIO" id="WjW-2A-8dA"/>

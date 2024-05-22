@@ -19,14 +19,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releasedLabel: UILabel!
     @IBOutlet weak var websiteButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
-    
-    var activityIndicator : NVActivityIndicatorView!
+  @IBOutlet weak var containerView: UIView!
+  
+  var activityIndicator : NVActivityIndicatorView!
     var id = 0
     var isFromFavorite = false
     var details : Details?{
         didSet{
             DispatchQueue.main.async{
                 self.activityIndicator.stopAnimating()
+                self.containerView.isHidden = true
                 self.setup()
             }
         }
@@ -107,6 +109,7 @@ class DetailViewController: UIViewController {
             switch result {
             case .failure(let error):
                 print(error)
+
             case .success(let detail):
                 self?.details = detail
             }

@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.9.1)
+  - Kingfisher (7.6.2)
+  - NFCReaderWriter (1.1.4)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SwiftQRScanner (1.1.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher (~> 7.0)
+  - NFCReaderWriter
+  - NVActivityIndicatorView
+  - SwiftQRScanner (from `https://github.com/vinodiOS/SwiftQRScanner`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - NFCReaderWriter
+    - NVActivityIndicatorView
+
+EXTERNAL SOURCES:
+  SwiftQRScanner:
+    :git: https://github.com/vinodiOS/SwiftQRScanner
+
+CHECKOUT OPTIONS:
+  SwiftQRScanner:
+    :commit: fddcabcb431cd6110cea0394660082661dbafa7e
+    :git: https://github.com/vinodiOS/SwiftQRScanner
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  NFCReaderWriter: b21965d1b3b8c53f7648f58f597b77a13f6ecdc5
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SwiftQRScanner: e85a25f9b843e9231dab89a96e441472fe54a724
+
+PODFILE CHECKSUM: 50e6268277328e7832bc6b8f78b6c578d3033b6f
+
+COCOAPODS: 1.15.2
